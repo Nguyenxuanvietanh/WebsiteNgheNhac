@@ -1,0 +1,53 @@
+form{
+    margin: 0px auto;
+}
+form label{
+    font-weight: bold;
+}
+.dropdown-menu li{
+    padding: 5px 5px 5px 20px;
+}
+.dropdown-menu li:hover{
+    background-color: whitesmoke;
+}
+.button{
+    text-align: center;
+}
+.dropdown button{
+    background-color: palegreen;
+}
+.ngay{
+    width: 30% !important;
+}
+select{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: palegreen;
+    border: none;
+    min-width: 160px;
+}
+option{
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+    color: #0c7bbe;
+}
+.cbl{
+    margin-right: 40px;
+}
+.form{
+    width: 48%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.info{
+    margin-top: 25px;
+}
+input:read-only{
+    color: red;
+    background-color: #fff!important;
+    /* border: none; */
+}

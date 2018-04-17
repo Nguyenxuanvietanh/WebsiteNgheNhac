@@ -1,0 +1,173 @@
+
+.m-content{
+    min-height: 500px;
+}
+
+.clr{
+    clear: both;
+}
+
+.mn-bar{
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.0625)!important;
+    padding: 10px;
+    line-height: 50px;
+}
+.video-icon{
+    width: 50px;
+    height: 50px;
+    background: url('../images/video.png') left top no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+.main{
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.0625)!important;
+    padding: 10px;
+    min-height: 600px;
+}
+.controll{
+    float: right;
+}
+.icon{
+    margin-left: 20px;
+}
+.icon-add{
+    width: 50px;
+    height: 50px;
+    background: url('../images/add.png') left top no-repeat;
+    float: left;
+}
+
+.icon-edit{
+    width: 50px;
+    height: 50px;
+    background: url('../images/edit.png') left top no-repeat;
+    float: left;
+}
+
+.icon-delete{
+    width: 50px;
+    height: 50px;
+    background: url('../images/bin.png') left top no-repeat;
+    float: left;
+}
+
+.icon-check{
+    width: 50px;
+    height: 50px;
+    background: url('../images/tick.png') left top no-repeat;
+    float: left;
+}
+
+.icon-uncheck{
+    width: 50px;
+    height: 50px;
+    background: url('../images/unpublish.png') left top no-repeat;
+    float: left;
+}
+
+.icon-save{
+    width: 50px;
+    height: 50px;
+    background: url('../images/save.png') left top no-repeat;
+    float: left;
+}
+
+.icon-save-new{
+    width: 50px;
+    height: 50px;
+    background: url('../images/save-new.png') left top no-repeat;
+    float: left;
+}
+
+.icon-save-close{
+    width: 50px;
+    height: 50px;
+    background: url('../images/save-close.png') left top no-repeat;
+    float: left;
+}
+
+.icon-cancel{
+    width: 50px;
+    height: 50px;
+    background: url('../images/cancel.png') left top no-repeat;
+    float: left;
+}
+.filter{
+    float: left;
+    margin: 10px auto;
+}
+.filter input{
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 250px;
+}
+.filter-group{
+    float: right;
+    margin: 10px auto;
+}
+label{
+    display: inline !important;
+}
+.row-chan{
+    background: whitesmoke;
+}
+.table td{
+    border-right: 1px solid #e9ecef;
+    vertical-align: middle;
+    text-align: center;
+}
+.table th{
+    text-align: center;
+}
+.table th:first-child{
+    text-align: left;
+}
+.table tbody tr{
+    border-bottom: 1px solid #e9ecef;
+    border-left: 1px solid #e9ecef;
+    line-height: 50px;
+}
+.uncheck{
+    height: 20px;
+    width: 20px;
+    display: block;
+    background: url('../images/uncheck.png') left top no-repeat;
+    margin-left: 25px;
+}
+.check{
+    height: 20px;
+    display: block;
+    background: url('../images/check.png') left top no-repeat;
+    margin-left: 25px;
+}
+.pagination{
+    margin-left: 410px;
+}
+.pagination li{
+    border: 1px solid #0f9aee;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+.message{
+    /* height: 48px; */
+    line-height: 30px;
+    /* font-weight: bold; */
+}
+.success{
+    background-color: lavender;
+    color: #0f9aee;
+    border-top: 4px solid #0f9aee;
+    border-bottom: 4px solid #0f9aee;
+    padding-left: 15px;
+}
+.error{
+    background-color: antiquewhite;
+    color: red;
+    border-top: 4px solid #CA434A;
+    border-bottom: 4px solid #CA434A;
+    padding-left: 15px;
+}

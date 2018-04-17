@@ -1,0 +1,166 @@
+.content{
+    width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+    padding: 15px 12px 0;
+}
+.menu-left{
+    width: 192px;
+    float: left;
+    position: fixed;
+    height: 500px;
+}
+.data-list-title{
+    margin-bottom: 10px;
+}
+.data-list-title h1{
+    font-weight: 700;
+    font-size: 100%;
+}
+.data-list-title a{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 20px;
+    display: block;
+    text-decoration: none;
+}
+.data-list-title a:hover{
+    color: #721799;
+    background: #ecf0f1;
+}
+.item-data-list .data-list-title{
+    margin: 0px;
+    font-weight: 700;
+    font-size: 100%;
+}
+.item-mnleft h1{
+    margin: 0px;
+}
+.item-mnleft a{
+    font-size: 16px;
+    color: #888;
+    padding: 8px 20px;
+    display: block;
+    text-decoration: none;
+}
+.item-mnleft a:hover{
+    color: #721799;
+    background: #ecf0f1;
+}
+/*=======================Content=======================*/
+.list-content{
+    width: 760px;
+    float: right;
+    height: 500px;
+    margin-bottom: 25px;
+}
+.title-list{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 26px;
+    color: purple;
+}
+.row{
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 24px;
+}
+.list-item{
+    height: 240px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    position: relative;
+    padding: 0 8px;
+    float: left;
+}
+.list-item > a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    background: #000;
+}
+.list-item a img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: all .3s ease-in;
+}
+.list-item a:hover img{
+    opacity: .65!important;
+}
+.list-item a:hover > .icon-play{
+    opacity: 1;
+    transform: scale(1);
+}
+.icon-play{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: 0 -160px;
+    z-index: 100;
+    margin: -25px 0 0 -25px;
+    transform: scale(0);
+    transition: all .3s ease-in;
+}
+.title-song{
+    max-height: 3em;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 100%;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+    line-height: 1.42857;
+}
+.title-song a{
+    text-decoration: none;
+    color: #000;
+}
+.title-song a:hover{
+    color: #a845de;
+}
+.singer-name{
+    font-size: 12px;
+}
+.singer-name a{
+    text-decoration: none;
+    color: #888;
+}
+.singer-name a:hover{
+    color: #a845de;
+}
+.pagination{
+    height: 40px;
+    background: #f2f2f2;
+}
+.pagination ul{
+    width: 100%;
+    text-align: center;
+}
+.pagination ul li{
+    display: inline-block;
+    /* margin: 0 2px; */
+    line-height: 40px;
+}
+.pagination ul li a{
+    color: #888;
+    line-height: 40px;
+    padding: 0 15px;
+    display: block;
+    text-decoration: none;
+}
+.pagination ul li a:hover{
+    background: #34495e;
+    color: #fff;
+}
+.pagination .active{
+    background: #34495e;
+    color: #fff;
+}

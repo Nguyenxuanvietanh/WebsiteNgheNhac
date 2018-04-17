@@ -1,0 +1,150 @@
+/*----------------------LOGIN---------------------------*/
+.error{
+    color: #f00;
+    font-style: italic;
+}
+
+.success{
+    color: #0056b3;
+    font-style: italic;
+}
+
+.main-content-agile {
+    /* margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    width: 34%; */
+    margin-top: -20px;
+    position: relative;
+    background-color: #fff;
+    /* max-width: 400px; */
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+    padding: 0 0 24px;
+    box-shadow: 0 8px 24px rgba(21,48,142,.14);
+    border-radius: 2px;
+}
+.wthree-pro {
+    background: rgba(255, 255, 255, 0.07);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.32);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.wthree-pro h2 {
+    font-size: 1.7em;
+    color: #999;
+    letter-spacing: 1px;
+    padding: 1em 0 1em 2em;
+    font-weight: 600;
+    text-align: left;
+    text-shadow: 1px 1px 1px #000;
+}
+.sub-main-w3{
+	position:relative;
+    padding: 2em;
+}
+.sub-main-w3 input[type="text"], .sub-main-w3 input[type="password"], .sub-main-w3 input[type="email"], .sub-main-w3 input[type="tel"] {
+    outline: none;
+    font-size: 13px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background-color: transparent;
+    width: 95.5%;
+    padding: 10px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sub-main-w3 input[type="submit"] {
+    color: #fff;
+    background: #008fe5;
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    padding: .5em 4em;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Philosopher', sans-serif;
+}
+.sub-main-w3 input[type="submit"]:hover {
+    background: #0084d3;
+}
+.icon1, .icon2 {
+    position: relative;
+    margin-top: 1.3em;
+    text-align: left;
+}
+.icon1 i, .icon2 i {
+    left: 7px;
+    bottom: 103%;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: absolute;
+}
+.icon1{
+	padding-bottom:1em!important;
+}
+.rem-w3 {
+    margin: 1.5em 0;
+}
+span.check-w3 {
+    float: left;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+}
+.rem-w3 a {
+    float: right;
+    font-size: 13.5px;
+    letter-spacing: 1px;
+}
+.rem-w3 a:hover{
+    color: #dd4b39;
+	ransition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.sub-main-w3 h6 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+/*-- social-icons --*/
+.navbar-right.social-icons a {
+    display: inline-block;
+    padding: 10px 0px;
+    text-decoration: none;
+    width: 50%;
+    letter-spacing: 1px;
+    font-weight: 400;
+    cursor: pointer;
+	color:#fff;
+    font-size: 14px!important;
+}
+.navbar-right.social-icons a.one-w3ls {
+    background: #3b5998;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    float: left;
+}
+.navbar-right.social-icons a.two-w3ls {
+	background:#dd4b39;
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+}
+.navbar-right.social-icons p i {
+    color: #fff;
+    font-size: 24px;
+}
+.navbar-right.social-icons a i {
+    padding-right: 15px;
+}

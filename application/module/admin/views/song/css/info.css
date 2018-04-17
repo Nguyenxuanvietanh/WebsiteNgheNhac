@@ -1,0 +1,42 @@
+h3{
+    text-align: center;
+}
+.song-content{
+    width: 90%;
+    margin: 0px auto;
+}
+audio{
+    width: 100%;
+}
+.audio{
+    float: left;
+    height: 450px;
+    padding: 10px;
+}
+.main{
+    min-height: 840px;
+}
+.info{
+    float: left;
+    height: 450px;
+    padding: 10px;
+}
+.left{
+    float: left;
+}
+h3{
+    color: darkorchid!important;
+}
+span{
+    font-weight: bold;
+    color: darkslategray;
+}
+.lyrics{
+    font-weight: normal;
+}
+textarea{
+    width: 130%;
+    border: none;
+    /* border-radius: 10px; */
+    height: 400px;
+}

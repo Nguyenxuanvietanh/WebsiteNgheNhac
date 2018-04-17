@@ -1,0 +1,180 @@
+/*=======================BODY=======================*/
+.banner{
+    width: 1000px;
+    margin: 0px auto;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    max-height: 295px;
+}
+.content{
+    width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+    padding: 15px 12px 0;
+}
+
+.content-left{
+    width: 650px;
+    padding: 0px;
+    float: left;
+}
+
+.title{
+    color: purple;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.list-nhac{
+    margin-top: 30px;
+}
+
+.album{
+    overflow: hidden;
+    margin: 24px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.album-item{
+    height: 220px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    /* padding: 0 8px; */
+    width: 25%;
+    float: left;
+}
+.album-item a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+.album-item a:hover{
+    color: #a845de;
+}
+.item-content{
+    padding: 0 8px;
+}
+.item-content > a{
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    background: #000;
+}
+.item-content a img{
+    display: block;
+    max-width: 100%;
+    height: 150px;
+    transition: all .3s ease-in;
+}
+.item-content a:hover img{
+    opacity: .65!important;
+}
+.item-content a:hover > .icon-play{
+    opacity: 1;
+    transform: scale(1);
+}
+.icon-play{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: 0 -160px;
+    z-index: 100;
+    margin: -25px 0 0 -25px;
+    transform: scale(0);
+    transition: all .3s ease-in;
+}
+.thumb{
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    background-color: #000;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.item-name{
+    font-size: 14px;
+    font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+}
+.title-nhac{
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-family: "Open Sans","segoe ui",Helvetica,Arial,sans-serif;
+    color: purple;
+}
+
+.icon-arrow{
+    width: 20px;
+    height: 20px;
+    background-position: -25px -924px;
+    display: inline-block;
+    top: -2px;
+    left: -5px;
+    position: relative;
+    background-image: url(../images/icon.png);
+    background-repeat: no-repeat;
+}
+
+
+/*--------------------Content-Right--------------------*/
+.content-right{
+    width: 300px;
+    float: right;
+    margin-top: 30px;
+}
+.chude{
+    margin-top: 24px;
+}
+.content-right a{
+    text-decoration: none;
+}
+.content-right a:hover{
+    color: purple;
+}
+.topic-hot{
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.content-right ul li{
+    margin: 0 0 15px;
+}
+.topic-hot ul li a{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 90px;
+}
+.topic img{
+    display: block;
+    width: 300px;
+    height: 90px;
+}
+.more{
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    color: #707070;
+}
+
+
+/*=======================FOOTER=======================*/
+.footer{
+    height: 130px;
+    background-color: #222428;
+}
