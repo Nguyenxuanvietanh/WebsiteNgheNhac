@@ -94,7 +94,7 @@
             </div>
             <div class="count-view">
                 <b class="ico">lượt nghe</b>
-                <span class="count-luotnghe"><?php echo $songData['luotnghe']; ?></span>
+                <span class="count-luotnghe"><?php echo number_format($songData['luotnghe']); ?></span>
             </div>
         </div>
         <div class="clr"></div>
@@ -125,7 +125,7 @@
                     <span class="like-count">
                         <i></i>
                         <b></b>
-                        <span class="fn-count"><?php echo $songData['luotquantam']; ?></span>
+                        <span class="fn-count"><?php echo number_format($songData['luotquantam']); ?></span>
                     </span>
                 </div>
                 

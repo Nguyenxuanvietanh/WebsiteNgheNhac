@@ -1,6 +1,6 @@
 <?php
 class SingerModel extends Model{
-    private $_columns = array('idcasy', 'tencasy', 'hinhanh', 'infocasy', 'luotquantam');
+    private $_columns = array('idcasy', 'tencasy', 'hinhanh', 'infocasy', 'luotquantam', 'idquocgia');
 	public function __construct(){
 		parent::__construct();
 		$this->table = 'casy';
@@ -10,7 +10,7 @@ class SingerModel extends Model{
     public function listSinger($arrParam, $option = null){
         $query[] = 'SELECT `tencasy`, `hinhanh`, `infocasy`, `luotquantam`, `idcasy`';
         $query[] = 'FROM `'.$this->table.'`';
-        $query[] = 'WHERE `idcasy` > 1 ';
+        //$query[] = 'WHERE `idcasy` > 1 ';
 
         $flagWhere = false;
         //Filter Search
@@ -73,17 +73,18 @@ class SingerModel extends Model{
         if($option['task'] == 'edit'){
             $tencasy = $arrParam['form']['tencasy'];
             $hinhanh = $arrParam['form']['hinhanh'];
+            $idquocgia = $arrParam['form']['idquocgia'];
             $info = $arrParam['form']['infocasy'];
 
             $query[] = "UPDATE `casy`";
-            $query[] = "SET `tencasy` = '".$tencasy."', `hinhanh` = '".$hinhanh."', `infocasy` = '".$info."'";
+            $query[] = "SET `tencasy` = '".$tencasy."', `hinhanh` = '".$hinhanh."', `infocasy` = '".$info."', `idquocgia` = ".$idquocgia;
             $query[] = "WHERE `idcasy` = " . $arrParam['form']['idcasy'];
             $query =  implode(" ", $query);
 
             $this->query($query);
 
             Session::set('message', array('class' => 'success', 'content' => 'Dữ liệu được lưu thành công!'));
-            return $data['idbaihat'];
+            return $data['idcasy'];
         }
     }
 
@@ -117,6 +118,19 @@ class SingerModel extends Model{
             }
             
         } 
+    }
+
+    //FORM SELECT BOX 
+    public function dataRow($table, $key, $value, $condition = null){
+        $query[] = "SELECT `$key`, `$value`";
+        $query[] = "FROM `$table`";
+        if($condition != null){
+            $query[] = "WHERE" . $condition;
+        }
+        $query = implode(" ", $query);
+        $result = $this->listRecord($query);
+
+        return $result;
     }
 }
 ?>

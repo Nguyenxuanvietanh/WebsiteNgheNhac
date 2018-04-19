@@ -98,6 +98,7 @@
     $txtLyrics          = Helper::cmsEditor('form[lyrics]', 'lyrics', $dataForm['lyrics']);
 
     //Select Box
+    // $selectStatus = Helper::cmsSelectBox('filterStatus', $arrStatus, $this->arrParam['filterStatus']);
     $selectTacgia       = Helper::cmsSelectBox('form[idnghesy]', $arrNghesy, null);
     if(isset($dataForm['idnghesy'])){
         $selectTacgia       = Helper::cmsSelectBox('form[idnghesy]', $arrNghesy, $dataForm['idnghesy']);
@@ -119,8 +120,6 @@
 
     
     //Checkbox
-    //$cblTheLoai         = Helper::cmsCheckboxList('form[idtheloai]', $arrTheloai);
-    //$cblDexuat          = Helper::cmsCheckboxList('form[dexuat]', array('true' => 'Tick'));
     $cbDexuat           = Helper::cmsCheckbox('form[dexuat]', array(1 => 'Tick'), true);
 
     //Row
@@ -139,6 +138,8 @@
     $rowChude           = Helper::cmsFormRow('Chủ đề', $selectChude, false);
     $rowLyrics          = Helper::cmsFormRow('Lyrics', $txtLyrics, false);
 
+    
+
     $this->errors = (isset($this->errors)) ? $this->errors : '';
 ?>
 
@@ -154,7 +155,7 @@
                 <?php echo $rowID . $rowTenBH . $rowHinhanh . $rowHinhanhCT . $rowMP3 . $rowNgayPH . $rowDexuat . $rowInfo; ?>
             </div>
             <div class="form right">
-                <?php echo $rowTheLoai . $rowTacgia . $rowCasy . $rowAlbum . $rowQuocgia . $rowChude . $rowLyrics . $linkVideo; ?>
+                <?php echo $rowTheLoai . $rowQuocgia . $rowTacgia . $rowCasy . $rowAlbum . $rowChude . $rowLyrics . $linkVideo; ?>
             </div>
 
             <div class="clr"></div>

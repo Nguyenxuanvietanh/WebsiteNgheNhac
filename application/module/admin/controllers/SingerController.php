@@ -20,10 +20,12 @@ class SingerController extends Controller{
     }
 
     public function formAction(){
-		$this->_view->_title = 'Thêm ca sỹ';
+		$this->_view->_title = 'Add Singer';
 		$albumCondition = '';
+		$this->_view->quocgia	= $this->_model->dataRow('quocgia', 'tenquocgia', 'idquocgia');
+		
 		if(isset($this->_arrParam['idcasy'])){
-			$this->_view->_title = 'Sửa thông tin ca sỹ';
+			$this->_view->_title = 'Update Singer';
 			$this->_view->arrParam['form'] = $this->_model->showInfoItems($this->_arrParam['idcasy']);
 			if(empty($this->_view->arrParam['form'])) URL::redirect(URL::createLink('admin', 'singer', 'index'));
         }
@@ -39,7 +41,7 @@ class SingerController extends Controller{
 
 			$validate->addRule('tencasy', 'string', array('min' => 1, 'max' => 255))
 					 ->addRule('hinhanh', 'file', array('extension' => array('png','gif','jpg','jpeg')))
-					 ->addRule('infocasy', 'string', array('min' => 1, 'max' => 255));
+					 ->addRule('infocasy', 'string', array('min' => 1, 'max' => 1000));
 			$validate->run();
 
 			$this->_arrParam['form'] = $validate->getResult();

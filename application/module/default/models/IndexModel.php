@@ -19,6 +19,7 @@ class IndexModel extends Model{
             $query[] = "FROM `baihat`, `casy`, `chitietbaihat`";
             $query[] = "WHERE `baihat`.`idcasy` = `casy`.`idcasy`";
             $query[] = "AND `baihat`.`idbaihat` = `chitietbaihat`.`idbaihat`";
+            $query[] = "AND `baihat`.`idquocgia` = 1";
             $query[] = "ORDER BY `baihat`.`ngayphathanh` DESC";
             $query[] = "LIMIT 5";
         }
@@ -28,6 +29,7 @@ class IndexModel extends Model{
             $query[] = "FROM `baihat`, `casy`, `chitietbaihat`";
             $query[] = "WHERE `baihat`.`idcasy` = `casy`.`idcasy`";
             $query[] = "AND `baihat`.`idbaihat` = `chitietbaihat`.`idbaihat`";
+            $query[] = "AND `baihat`.`idquocgia` = 1";
             $query[] = "ORDER BY `chitietbaihat`.`luotthich` DESC";
             $query[] = "LIMIT 5";
         }     

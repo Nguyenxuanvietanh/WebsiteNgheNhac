@@ -190,17 +190,17 @@ class SongModel extends Model{
             $query[] = "UPDATE `baihat`";
             $query[] = "SET `tenbh` = '".$tenbh."', `hinhanh` = '".$hinhanh."', `ngayphathanh` = '".$ngayph."', `idtheloai` = '".$idtl."', `idnghesy` = '".$idns."', `idcasy` = '".$idcs."', `idquocgia` = '".$idqg."', `idchude` = '".$idcd."', `dexuat` = '".$dexuat."' ";
             $query[] = "WHERE `idbaihat` = " . $arrParam['form']['idbaihat'];
-            $query =  implode(" ", $query);
+            echo $query =  implode(" ", $query);
 
-            $this->query($query);
+            //$this->query($query);
 
             $ctquery[] = "UPDATE `chitietbaihat`";
             $ctquery[] = "SET `hinhanhct` = '" . $ct['hinhanhct'] . "', `infobaihat` = '" . $ct['infobaihat'] . "', `mp3` = '" . $ct['mp3'] . "', `lyrics` = '" . $ct['lyrics'] . "'";
             $ctquery[] = "WHERE `idchitietbaihat` = " . $data['idbaihat'];
 
-            $ctquery =  implode(" ", $ctquery);
+            echo $ctquery =  implode(" ", $ctquery);
 
-            $this->query($ctquery);
+            //$this->query($ctquery);
             Session::set('message', array('class' => 'success', 'content' => 'Dữ liệu được lưu thành công!'));
             return $data['idbaihat'];
         }
@@ -208,7 +208,7 @@ class SongModel extends Model{
 
     //SHOW INFO ITEMS
     public function showInfoItems($idbh, $option = null){
-        //`idbaihat`, `tenbh`, `hinhanh`, `ngayphathanh`, `idquocgia`,`dexuat`,`idnghesy`,`idcasy`,`idtheloai`,`idalbum` 
+ 
         if($option == null){
             $qrbh = '`baihat`.`idbaihat`,`baihat`.`tenbh`, `baihat`.`hinhanh`, `baihat`.`ngayphathanh`';
             $qrct = '`chitietbaihat`.`infobaihat`, `chitietbaihat`.`mp3`, `chitietbaihat`.`luotnghe`, `chitietbaihat`.`luotthich`,`chitietbaihat`.`luottai`, `chitietbaihat`.`lyrics`';

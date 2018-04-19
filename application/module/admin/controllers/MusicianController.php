@@ -20,10 +20,12 @@ class MusicianController extends Controller{
     }
 
     public function formAction(){
-		$this->_view->_title = 'Thêm nhạc sỹ';
+		$this->_view->_title = 'Add Musician';
 		$albumCondition = '';
+		$this->_view->quocgia	= $this->_model->dataRow('quocgia', 'tenquocgia', 'idquocgia');
+
 		if(isset($this->_arrParam['idnghesy'])){
-			$this->_view->_title = 'Sửa thông tin nhạc sỹ';
+			$this->_view->_title = 'Update Musician';
 			$this->_view->arrParam['form'] = $this->_model->showInfoItems($this->_arrParam['idnghesy']);
 			if(empty($this->_view->arrParam['form'])) URL::redirect(URL::createLink('admin', 'musician', 'index'));
         }
@@ -39,7 +41,7 @@ class MusicianController extends Controller{
 
 			$validate->addRule('tennghesy', 'string', array('min' => 1, 'max' => 255))
 					 ->addRule('hinhanh', 'file', array('extension' => array('png','gif','jpg','jpeg')))
-					 ->addRule('infonghesy', 'string', array('min' => 1, 'max' => 255));
+					 ->addRule('infonghesy', 'string', array('min' => 1, 'max' => 1000));
 			$validate->run();
 
 			$this->_arrParam['form'] = $validate->getResult();

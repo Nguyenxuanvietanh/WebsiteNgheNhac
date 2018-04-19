@@ -5,6 +5,13 @@
         'infonghesy'          => '', 
     );
 
+    $dataQuocgia = $this->quocgia;
+    foreach($dataQuocgia as $quocgia){
+        $tenquocgia = $quocgia['tenquocgia'];
+        $idquocgia  = $quocgia['idquocgia'];
+        $arrQuocgia[$idquocgia] = $tenquocgia;
+    }
+
     $dataForm = (isset($this->arrParam['form'])) ? $this->arrParam['form'] : $form;
 
     $inputToken         = Helper::cmsInput('hidden', 'form[token]', 'token', time());
@@ -30,10 +37,17 @@
         $txtInfo            = Helper::cmsEditor('form[infonghesy]', 'infonghesy', $dataForm['infonghesy']);
     }
 
+    //SELECT BOX
+    $selectQuocgia      = Helper::cmsSelectBox('form[idquocgia]', $arrQuocgia, null);
+    if(isset($dataForm['idquocgia'])){
+        $selectQuocgia      = Helper::cmsSelectBox('form[idquocgia]', $arrQuocgia, $dataForm['idquocgia']);
+    }
+
     //Row
     $rowTennghesy           = Helper::cmsFormRow('Tên nhạc sỹ', $inputTennghesy, true);
     $rowHinhanh             = Helper::cmsFormRow('Hình ảnh', $inputHinhAnh, true);
     $rowInfo                = Helper::cmsFormRow('Info nhạc sỹ', $txtInfo, true);
+    $rowQuocgia             = Helper::cmsFormRow('Quốc gia', $selectQuocgia, false);
 
     $this->errors = (isset($this->errors)) ? $this->errors : '';
 ?>
@@ -46,7 +60,7 @@
         <div class="main">
         <?php echo $this->errors; ?>
         <form method="post" action="#" name="adminForm" id="adminForm" enctype="multipart/form-data">
-            <?php echo $rowID . $rowTennghesy . $rowHinhanh . $rowInfo; ?>
+            <?php echo $rowID . $rowTennghesy . $rowHinhanh . $rowQuocgia . $rowInfo; ?>
             <div class="button">
                 <?php echo $inputToken; ?>
             </div>

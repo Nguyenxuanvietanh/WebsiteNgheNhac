@@ -276,7 +276,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$vnSongTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$vnSongTopRate['luotnghe'].'</span>
+                                        <span id="luotnghe-bxh">'. number_format($vnSongTopRate['luotnghe']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mp3/' . $vnSongTopRate['mp3'].'" title="Download" download></a>
@@ -303,7 +303,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$vnSongRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$vnSongRate['luotnghe'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($vnSongRate['luotnghe']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mp3/' . $vnSongRate['mp3'].'" title="Download" download></a>
@@ -338,7 +338,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$amSongTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$amSongTopRate['luotnghe'].'</span>
+                                        <span id="luotnghe-bxh">'.number_format($amSongTopRate['luotnghe']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mp3/' . $amSongTopRate['mp3'].'" title="Download" download></a>
@@ -365,7 +365,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$amSongRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$amSongRate['luotnghe'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($amSongRate['luotnghe']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mp3/' . $amSongRate['mp3'].'" title="Download" download></a>
@@ -400,7 +400,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$hqSongTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$hqSongTopRate['luotnghe'].'</span>
+                                        <span id="luotnghe-bxh">'.number_format($hqSongTopRate['luotnghe']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mp3/' . $hqSongTopRate['mp3'].'" title="Download" download></a>
@@ -427,7 +427,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$hqSongRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$hqSongRate['luotnghe'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($hqSongRate['luotnghe']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mp3/' . $vnSongRate['mp3'].'" title="Download" download></a>
@@ -482,7 +482,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$vnMvTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$vnMvTopRate['luotxem'].'</span>
+                                        <span id="luotnghe-bxh">'.number_format($vnMvTopRate['luotxem']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mvs/' . $vnMvTopRate['linkvideo'] .'" title="Download" download></a>
@@ -509,7 +509,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$vnMvRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$vnMvRate['luotxem'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($vnMvRate['luotxem']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mvs/' . $vnMvRate['linkvideo'] .'" title="Download" download></a>
@@ -544,7 +544,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$amMvTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$amMvTopRate['luotxem'].'</span>
+                                        <span id="luotnghe-bxh">'.number_format($amMvTopRate['luotxem']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mvs/' . $amMvTopRate['linkvideo'] .'" title="Download" download></a>
@@ -571,7 +571,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$amMvRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$amMvRate['luotxem'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($amMvRate['luotxem']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mvs/' . $amMvRate['linkvideo'] .'" title="Download" download></a>
@@ -606,7 +606,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                     </div>
                                     <div class="casy-bxh">
                                         <a class="tencasy-bxh-top" href="#">'.$hqMvTopRate['tencasy'].'</a>
-                                        <span id="luotnghe-bxh">'.$hqMvTopRate['luotxem'].'</span>
+                                        <span id="luotnghe-bxh">'.number_format($hqMvTopRate['luotxem']).'</span>
                                         <div class="tool-icon">
                                             <div class="i25 download">
                                                 <a href="'.PUBLIC_URL . 'mvs/' . $hqMvTopRate['linkvideo'] .'" title="Download" download></a>
@@ -633,7 +633,7 @@ $amMvRates   = array_slice($this->amMvRates, 1);
                                             </div>
                                             <div class="casy-bxh">
                                                 <a class="tencasy-bxh" href="#">'.$hqMvRate['tencasy'].'</a>
-                                                <span id="luotnghe-bxh">'.$hqMvRate['luotxem'].'</span>
+                                                <span id="luotnghe-bxh">'.number_format($hqMvRate['luotxem']).'</span>
                                                 <div class="tool-icon">
                                                     <div class="i25 download">
                                                         <a href="'.PUBLIC_URL . 'mvs/' . $hqMvRate['linkvideo'] .'" title="Download" download></a>

@@ -1,6 +1,6 @@
 <?php
 class MusicianModel extends Model{
-    private $_columns = array('idnghesy', 'tennghesy', 'hinhanh', 'infonghesy', 'luotquantam');
+    private $_columns = array('idnghesy', 'tennghesy', 'hinhanh', 'infonghesy', 'luotquantam', 'idquocgia');
 	public function __construct(){
 		parent::__construct();
 		$this->table = 'nghesy';
@@ -10,7 +10,7 @@ class MusicianModel extends Model{
     public function listMusician($arrParam, $option = null){
         $query[] = 'SELECT `tennghesy`, `hinhanh`, `infonghesy`, `luotquantam`, `idnghesy`';
         $query[] = 'FROM `'.$this->table.'`';
-        $query[] = 'WHERE `idnghesy` > 1 ';
+        // $query[] = 'WHERE `idnghesy` > 1 ';
 
         $flagWhere = false;
         //Filter Search
@@ -73,10 +73,11 @@ class MusicianModel extends Model{
         if($option['task'] == 'edit'){
             $tennghesy = $arrParam['form']['tennghesy'];
             $hinhanh = $arrParam['form']['hinhanh'];
+            $idquocgia = $arrParam['form']['idquocgia'];
             $info = $arrParam['form']['infonghesy'];
 
             $query[] = "UPDATE `nghesy`";
-            $query[] = "SET `tennghesy` = '".$tennghesy."', `hinhanh` = '".$hinhanh."', `infonghesy` = '".$info."'";
+            $query[] = "SET `tennghesy` = '".$tennghesy."', `hinhanh` = '".$hinhanh."', `infonghesy` = '".$info."', `idquocgia` = ".$idquocgia;
             $query[] = "WHERE `idnghesy` = " . $arrParam['form']['idnghesy'];
             $query =  implode(" ", $query);
 
@@ -116,6 +117,19 @@ class MusicianModel extends Model{
             }
             
         } 
+    }
+
+    //FORM SELECT BOX 
+    public function dataRow($table, $key, $value, $condition = null){
+        $query[] = "SELECT `$key`, `$value`";
+        $query[] = "FROM `$table`";
+        if($condition != null){
+            $query[] = "WHERE" . $condition;
+        }
+        $query = implode(" ", $query);
+        $result = $this->listRecord($query);
+
+        return $result;
     }
 }
 ?>

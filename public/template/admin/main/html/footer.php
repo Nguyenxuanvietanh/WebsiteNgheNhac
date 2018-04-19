@@ -1,4 +1,4 @@
-<footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600"><span>Copyright © 2017 Designed by <a href="#" target="_blank" title="Colorlib">NguyenXuanVietAnhdh</a></span>
+<footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600"><span>Copyright © 2018 Designed by <a href="#" target="_blank" title="Colorlib">NguyenXuanVietAnh</a></span>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>

@@ -39,7 +39,7 @@
 }
 .list-item a img{
     display: block;
-    max-width: 100%;
+    width: 178px;
     height: 178px;
     transition: all .3s ease-in;
 }

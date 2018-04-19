@@ -47,13 +47,13 @@
                         $row = ($i % 2 == 0) ? 'row-chan' : ' ';
                         $image = '<img width="50" height="50" src="public/images/musicians/'.$musician['hinhanh'].'" alt="">';
                         $link = URL::CreateLink('admin', 'musician', 'form', array('idnghesy' => $musician['idnghesy']));
-                        echo '<tr class="'.$row.'">
+                        echo '<tr style="line-height: 101px;" class="'.$row.'">
                             <td>
                                 <input type="checkbox" name="cid[]" id="'.$musician['idnghesy'].'" value="'.$musician['idnghesy'].'" class="chcktbl" />
                                 <label for="'.$musician['idnghesy'].'"></label></td>
                             <td>'.$image.'</td>
                             <td><a href="'.$link.'">'.$musician['tennghesy'].'</a></td>
-                            <td>'.$musician['infonghesy'].'</td>
+                            <td style="text-align: left;">'.$musician['infonghesy'].'</td>
                             <td>'.$musician['luotquantam'].'</td>
                             <td>'.$musician['idnghesy'].'</td>
                         </tr>';

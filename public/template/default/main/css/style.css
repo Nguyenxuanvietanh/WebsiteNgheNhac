@@ -689,6 +689,9 @@ ul{
 }
 /*=======================FOOTER=======================*/
 .footer{
-    height: 130px;
-    background-color: #222428;
+    height: 70px;
+    background-color: #000;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
 }
